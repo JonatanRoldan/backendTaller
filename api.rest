@@ -1,0 +1,13 @@
+###
+get http://localhost:8080/api/carro
+
+###
+post  http://localhost:8080/api/carro
+Content-Type: application/json
+
+{
+    "marca": "toyota",
+    "modelo":"rav",
+    "color":"verde",
+    "placas":"11111212"
+}
