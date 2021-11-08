@@ -47,3 +47,21 @@ Content-Type: application/json
 ###
 delete http://localhost:8080/api/categoria/6188ae54235bc4e7c0afe1f7
 
+//Clientes
+###
+get http://localhost:8080/api/cliente
+
+###
+post http://localhost:8080/api/cliente
+Content-Type: application/json
+
+{
+    "nombre": "cristy",
+    "direccions":"4-23 zona 3",
+    "nit": 123456,
+    "telefono":"2354345"
+}
+
+###
+delete http://localhost:8080/api/cliente
+

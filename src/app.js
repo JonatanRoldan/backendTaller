@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/carro", require("./routes/carro.route"));
 app.use("/api/marca",require("./routes/marca.route"));
 app.use("/api/categoria",require("./routes/categoria.route"));
+app.use("/api/cliente",require("./routes/cliente.route"));
 
 module.exports = app;
 
