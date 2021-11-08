@@ -3,7 +3,9 @@ const carroCtrl = {};
 const Carro = require("../models/carro");
 
 carroCtrl.getcarros = async (req, res) => {
-	const carros = await Carro.find();
+	const carros = await Carro.find()
+	.populate('marca','nombre')
+	.populate('categoria','nombre');
 	res.json(carros);
 };
 carroCtrl.createcarro = async (req, res) => {
@@ -11,7 +13,7 @@ carroCtrl.createcarro = async (req, res) => {
 	console.log(req.body);
 	await nuevoCarro.save();
 	console.log("creado");
-	res.send("creado")
+	res.send("creado carro")
 };
 carroCtrl.getcarro = async (req, res) => {
 	console.log(req.params);

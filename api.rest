@@ -1,3 +1,4 @@
+//CAROS
 ###
 get http://localhost:8080/api/carro
 
@@ -6,8 +7,43 @@ post  http://localhost:8080/api/carro
 Content-Type: application/json
 
 {
-    "marca": "toyota",
-    "modelo":"rav",
-    "color":"verde",
-    "placas":"11111212"
+    "marca":"6188ad7b235bc4e7c0afe1e6",
+    "categoria":"6188ae83235bc4e7c0afe1fa",
+    "linea":"yaris",
+    "color":"rojo",
+    "modelo":2008,
+    "motor": "1500"
 }
+
+// Marcas
+###
+get http://localhost:8080/api/marca
+
+###
+post http://localhost:8080/api/marca
+Content-Type: application/json
+
+{
+    "nombre": "toyota",
+    "descripcion": "Empresa fabricante de vehículos más grandes de Japón"
+}
+
+###
+delete http://localhost:8080/api/marca/6188ab4eb24ffe7946902cbb
+
+//Categorias
+###
+get http://localhost:8080/api/categoria
+
+###
+post http://localhost:8080/api/categoria
+Content-Type: application/json
+
+{
+    "nombre": "sedan",
+    "descripcion": "Se caracterizan por tener un chasis monocasco con tres espacios claramente separados"
+}
+
+###
+delete http://localhost:8080/api/categoria/6188ae54235bc4e7c0afe1f7
+
