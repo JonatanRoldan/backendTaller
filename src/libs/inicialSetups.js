@@ -5,7 +5,7 @@ export const createRol = async () => {
 		if (contador > 0) return;
 		const valores = await Promise.all([
 			new Rol({ name: "admin" }).save(),
-			new Rol({ name: "mecanico1" }).save(),
+			new Rol({ name: "mecanico" }).save(),
 		]);
 		console.log(valores);
 	} catch (error) {

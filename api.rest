@@ -1,4 +1,4 @@
-//CAROS
+//CARROS
 ###
 get http://localhost:8080/api/carro
 
@@ -65,3 +65,78 @@ Content-Type: application/json
 ###
 delete http://localhost:8080/api/cliente
 
+//tarea
+###
+get http://localhost:8080/api/tarea
+
+###
+post http://localhost:8080/api/tarea
+Content-Type: application/json
+
+{
+    "nombre": "Cambio Filtro de Aceite",
+    "descripcion":"se cambia el filtro de aceite",
+    "costo": 50,
+    "tiempoEM": 5
+}
+
+###
+delete http://localhost:8080/api/tarea
+
+//servicio
+###
+get http://localhost:8080/api/servicio
+
+###
+post http://localhost:8080/api/servicio
+Content-Type: application/json
+
+{
+    "car": "6188afcd42dd13520f63a466",
+    "cliente":"6188b5155c6a05c96851e944",
+    "descripcion":"balanceo de llantas",
+    "tareas": [
+        {
+            "comentario":"llanta delantera derecha",
+            "tarea":"61896da0c7acfcaf0f381218"
+        },
+        {
+            "comentario":"llanta delantera izquierda",
+            "tarea":"61896da0c7acfcaf0f381218"
+        },
+        {
+            "comentario":"llanta trasera derecha",
+            "tarea":"61896da0c7acfcaf0f381218"
+        },
+        {
+            "comentario":"llanta trasera izquierda",
+            "tarea":"61896da0c7acfcaf0f381218"
+        }
+    ],
+    "plazo": 60,
+    "costo": 80
+}
+
+###
+delete http://localhost:8080/api/tarea
+
+//Usuarios
+###
+post http://localhost:8080/api/user/signup
+Content-Type: application/json
+
+{
+    "userName": "luis",
+	"password": "1234",
+	"state": 1,
+    "rol":["manager"]
+}
+
+###
+post http://localhost:8080/api/user/signin
+Content-Type: application/json
+
+{
+    "userName": "admin",
+	"password": "1234"
+}

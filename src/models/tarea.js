@@ -5,7 +5,7 @@ const tareaSchema = new Schema(
         nombre:{type:String, requirided: true},
         descripcion:{type:String, requirided: true},
         costo:{type:Number, requirided: true},
-        timpoE:{type:String, requirided: true}
+        tiempoEM:{type:Number, requirided: true}
     },
     {
         timestamps: true,

@@ -2,19 +2,22 @@ const express = require('express');
 const morgan = require('morgan');
 
 const app = express();
+
+//import { createRol } from "./libs/inicialSetups";
 app.set('port', process.env.PORT||8080);
 
 app.use (morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+//createRol();
 
-app.use("/api/carro", require("./routes/carro.route"));
-app.use("/api/marca",require("./routes/marca.route"));
-app.use("/api/categoria",require("./routes/categoria.route"));
-app.use("/api/cliente",require("./routes/cliente.route"));
-//app.use("/api/usuario",require("./routes/user.route"));
-app.use("/api/tarea",require("./routes/tarea.route"));
-app.use("/api/servicios",require("./routes/servicio.route"));
+//app.use("/api/user", require("./routes/user.routes"));
+app.use("/api/carro", require("./routes/carro.routes"));
+app.use("/api/marca",require("./routes/marca.routes"));
+app.use("/api/categoria",require("./routes/categoria.routes"));
+app.use("/api/cliente",require("./routes/cliente.routes"));
+app.use("/api/tarea",require("./routes/tarea.routes"));
+app.use("/api/servicio",require("./routes/servicio.routes"));
 
 module.exports = app;
 

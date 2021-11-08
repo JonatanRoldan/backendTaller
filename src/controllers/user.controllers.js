@@ -1,14 +1,14 @@
-import User from "../models/usuario";
-import Rol from "../models/rol.js";
+import User from "../models/user";
+import Rol from "../models/rol";
 import config from "../config";
 
 const userControler = {};
 const jwt = require("jsonwebtoken");
 
-
 userControler.getUsers = async (req, res) => {
 	const users = await User.find();
 	res.json(users);
+	console.log(" token2 ");
 };
 
 userControler.Signup = async (req, res) => {
