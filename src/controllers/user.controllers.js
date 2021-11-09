@@ -1,6 +1,7 @@
-import User from "../models/user";
-import Rol from "../models/rol";
-import config from "../config";
+const User = require( "../models/user");
+const Rol = require( "../models/rol");
+//const config = require( "../config");
+//import config from "../config";
 
 const userControler = {};
 const jwt = require("jsonwebtoken");

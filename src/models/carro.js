@@ -5,9 +5,10 @@ const carroSchema = new Schema(
         marca:{type: Schema.ObjectId, ref: "marca", requerided:true},
         categoria:{type: Schema.ObjectId, ref: "categoria", requerided:true},
         linea:{type:String, requirided: true},
-        color:{type:String, requirided: true},
-        modelo:{type:Number, requirided: true},
-        motor:{type:String, requirided: true}
+        caja:{type:String, requirided: true},
+        motor:{type:String, requirided: true},
+        modelo:{type:Number, requirided: true}
+        
     },
     {
         timestamps: true,

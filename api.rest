@@ -7,12 +7,13 @@ post  http://localhost:8080/api/carro
 Content-Type: application/json
 
 {
-    "marca":"6188ad7b235bc4e7c0afe1e6",
-    "categoria":"6188ae83235bc4e7c0afe1fa",
+    "marca":"6189a2567da06a221f1512e7",
+    "categoria":"6189a27d7da06a221f1512e9",
     "linea":"yaris",
-    "color":"rojo",
-    "modelo":2008,
-    "motor": "1500"
+    "caja":"automatico",
+    "motor": "1500",
+    "modelo":2008
+    
 }
 
 // Marcas
@@ -98,18 +99,6 @@ Content-Type: application/json
     "tareas": [
         {
             "comentario":"llanta delantera derecha",
-            "tarea":"61896da0c7acfcaf0f381218"
-        },
-        {
-            "comentario":"llanta delantera izquierda",
-            "tarea":"61896da0c7acfcaf0f381218"
-        },
-        {
-            "comentario":"llanta trasera derecha",
-            "tarea":"61896da0c7acfcaf0f381218"
-        },
-        {
-            "comentario":"llanta trasera izquierda",
             "tarea":"61896da0c7acfcaf0f381218"
         }
     ],

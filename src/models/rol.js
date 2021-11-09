@@ -2,11 +2,12 @@ const { Schema, model } = require("mongoose");
 
 const rolSchema = new Schema(
 	{
-		name: String,
+		name:{type:String, requirided: true},
 	},
 	{
+		timestamps: true,
 		versionKey: false,
 	}
 );
 
-export default model("Rol", rolSchema);
+module.exports = model("Rol", rolSchema);
