@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 //crearRol.createRol();
 
+//las uris
 app.use("/api/user", require("./routes/user.routes"));
 app.use("/api/carro", require("./routes/carro.routes"));
 app.use("/api/marca",require("./routes/marca.routes"));
