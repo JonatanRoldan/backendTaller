@@ -5,7 +5,6 @@ import Rol from "../models/rol";
 
 export const verifyToken = async (req, res, next) => {
 	const token = req.headers["accesstoken"];
-
 	try {
 		if (!token) return res.status(404).json({ message: "not token provider" });
 		const decoded = jwt.verify(token, config.SECRET);

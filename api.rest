@@ -25,8 +25,8 @@ post http://localhost:8080/api/marca
 Content-Type: application/json
 
 {
-    "nombre": "toyota",
-    "descripcion": "Empresa fabricante de vehículos más grandes de Japón"
+    "nombre": "KIA motors",
+    "descripcion": "fabricante surcoreano de automóviles"
 }
 
 ###

@@ -9,4 +9,5 @@ router.get("/:id", marcaCtrl.getmarca);
 router.put("/:id", marcaCtrl.editmarca);
 router.delete("/:id", marcaCtrl.deletemarca);
 
+
 module.exports= router;
